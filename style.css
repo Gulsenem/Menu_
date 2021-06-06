@@ -35,7 +35,7 @@ header ul li span
     opacity: 0;
     transition: opacity 0.3s;
 }
-header ul li:hover a
+header ul li:hover:not(.aktiv) a
 {
     background-color: #161616;
    
@@ -43,4 +43,13 @@ header ul li:hover a
 header ul li:hover span
 {
     opacity:1;
+}
+
+li.aktiv a
+{
+    background-color: #34898b;
+}
+li.aktiv span
+{
+    color:#34898b;
 }
